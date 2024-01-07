@@ -5,7 +5,7 @@ var aText = new Array(
     "i drink lot of tea", // add your text
     "and build beautiful websites" // add your text
     );
-    var iSpeed = 100; 
+    var iSpeed = 200; 
     var iIndex = 0; 
     var iArrLength = aText[0].length; 
     var iScrollAt = 20; 
