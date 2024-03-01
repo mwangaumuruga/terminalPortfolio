@@ -58,6 +58,23 @@ p {
 nav {
   width: 30%;
 }
+#social-media-table i {
+  margin-right: 5px;
+}
+@keyframes moveLeftToRight {
+  from {
+    transform: translateX(-100%); /* Move the text off-screen to the left initially */
+  }
+  to {
+    transform: translateX(10); /* Move the text to the right */
+  }
+}
+
+/* Apply the animation to your h2 element */
+h2.move-left-to-right {
+  animation: moveLeftToRight  ease-in-out; /* Adjust the duration and easing as needed */
+}
+
 
 nav ul {
   display: flex;
@@ -73,12 +90,22 @@ nav ul li {
 .container {
   max-width: 1000px;
   margin: auto;
-  height: 92vh;
+  height: 50vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+.container2{
+  max-width: 1000px;
+  margin: auto;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 
 .wb-body {
   background: #111;
@@ -132,5 +159,34 @@ footer {
   content: '$';
   color: #52a563;
 }
+/* Add this to your existing CSS */
+#social-media-table {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap; /* Ensure that it wraps to the next line if the space is not enough */
+}
 
+#social-media-table td {
+  margin-right: 20px;
+}
+
+/* Add this to your existing CSS */
+#social-media-table {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#social-media-table td {
+  margin-right: 20px;
+}
+
+#social-media-table a {
+  color: #007bff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
 
