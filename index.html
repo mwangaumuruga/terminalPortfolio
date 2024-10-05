@@ -15,6 +15,46 @@
  <body>
     <div class="container">
       <nav>
+        <style>
+          /* Define the keyframes for the drop-in effect */
+          @keyframes dropIn {
+            0% {
+              opacity: 0;
+              transform: translateY(-50px); /* Start above */
+            }
+            100% {
+              opacity: 1;
+              transform: translateY(0); /* End at original position */
+            }
+          }
+      
+          /* Apply the animation to the <li> elements */
+          nav ul li {
+            list-style: none;
+            opacity: 0;
+            animation: dropIn 1.5s ease forwards;
+            animation-delay: 0.3s;
+          }
+      
+          /* Stagger the delay for each list item */
+          #about {
+            animation-delay: 0.5s; /* First item */
+          }
+          #contact {
+            animation-delay: 0.7s; /* Second item */
+          }
+          #resume {
+            animation-delay: 0.9s; /* Third item */
+          }
+      
+          /* Add basic styling for navigation */
+          nav ul {
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 20px;
+          }
+        </style>
         <ul>
           <li id="about">/About</li>
           <li id="contact">/Contact</li>
@@ -23,9 +63,9 @@
       </nav>
 
       <main>
-        <h6></br> "<i>The one we know in the 21st-century West is
+        <h6></br> "<i><mark>The one we know in the 21st-century West is
 ninja, but they were also called shinobi, yato, ninpei, suppa, kanja, rappa, and
-ukami.</i>":$<span class="cursor">|</span></h6>
+ukami.</mark></i>":$<span class="cursor">|</span></h6>
         <div class="terminal">
           <span> \[._.]/  \[._.]/ \[._.]/\[._.]/
             Hey there👋👋👋👋  I'm <h2 class="move-left-to-right"style=text-align: center;">Moses Mwangau Muruga</h2> 
