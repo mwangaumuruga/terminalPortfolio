@@ -1,72 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>RansomWarePrank</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://code.jquery.com/jquery-1.7.2.min.js"></script>
+    <title>@mosesmwangaumuruga</title>
+    <link rel='shortcut icon' type='image/x-icon' href='/favicon.ico' />
+    <!-- Add this to the head section of your HTML -->
+<!-- Add this to the head section of your HTML -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-d0mJ5xTVVBfhaU5CZfeEPl5UrFkHCW1ra7El6dzaWlJsOZpIgR3mI5U94eELV1eW" crossorigin="anonymous">
+  </head>
+ <body>
+	 <samp>
+    <div class="container">
+      <nav>
         <style>
-            body, html {
-                margin: 0;
-                padding: 0;
-                width: 100%;
-                height: 100%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                background-color: #000;
-                color: #fff;
-                font-size: 24px;
-                cursor: pointer;
+          /* Define the keyframes for the drop-in effect */
+          @keyframes dropIn {
+            0% {
+              opacity: 0;
+              transform: translateY(-50px); /* Start above */
             }
+            100% {
+              opacity: 1;
+              transform: translateY(0); /* End at original position */
+            }
+          }
+      
+          /* Apply the animation to the <li> elements */
+          nav ul li {
+            list-style: none;
+            opacity: 0;
+            animation: dropIn 1.5s ease forwards;
+            animation-delay: 0.3s;
+          }
+      
+          /* Stagger the delay for each list item */
+          #about {
+            animation-delay: 0.5s; /* First item */
+          }
+          #contact {
+            animation-delay: 0.7s; /* Second item */
+          }
+          #resume {
+            animation-delay: 0.9s; /* Third item */
+          }
+      
+          /* Add basic styling for navigation */
+          nav ul {
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 20px;
+          }
         </style>
-    </head>
-    <body>
-    
-    <div id="fullscreenText">All activities of this computer have been recorded.
-        All your files are encrypted.
-        Your browser has been blocked due to the reasons specified below.
-    
-        You have been subjected to violation of Copyright and Related Rights Law (Video, Music, Software) 
-        Illegal access has been initiated from your PC without your knowledge or consent, your PC may be infected by malware, 
-        thus you are violating the law on Neglectful Use of a Personal Computer. 
-        
-    
-        Your browser will be unblocked within 3-12 hours 
-    
+        <body>
+        <ul style="width: 100px;">
+          <li id="about">/About</li>
+          <li id="contact">/Contact</li>
+          <li id="resume"><a class="resume" target="_blank" href="Projects&Certs.html">/Projects&Certs</a></li>
+        </ul>
+      </nav>
 
-    
-        All PC Data will be detained    !!!
-    </div>
-    
-    <script>
-        
-        function enterFullscreen() {
-            const element = document.documentElement;
-    
-            if (element.requestFullscreen) {
-                element.requestFullscreen();
-            } else if (element.mozRequestFullScreen) { // Firefox
-                element.mozRequestFullScreen();
-            } else if (element.webkitRequestFullscreen) { // Chrome, Safari, Opera
-                element.webkitRequestFullscreen();
-            } else if (element.msRequestFullscreen) { // IE/Edge
-                element.msRequestFullscreen();
-            }
-        }
-    
-        function disableKeys(event) {
-            event.preventDefault();
-        }
+    </nav>
 
-        document.body.addEventListener('click', enterFullscreen);
+    <main>
+      <h2>Projects, Certifications, and Achievements</h2>
 
-        document.addEventListener('keydown', disableKeys);
+      <section id="projects">
+        <h3>Projects:</h3>
+        <div class="">
+          <h4>CalculatorInWebDevelopment</h4>
+          <button onclick="window.location.href='calculatorInWebDev/calculator.html'">Simple Calculator</button>
+        </div>
+  
 
-        document.addEventListener('contextmenu', function(event) {
-            event.preventDefault();
-        });
-    
-    </script>
-    
-    </body>
-    </html>
+        <h3>Achievements:</h3>
+       
+
+  <footer>
+    <p>&copy; 2024 codekartel</p>
+    <a href="https://www.linkedin.com/in/mwangau/">LinkedIn</a> | 
+    <a href="https://github.com/mwangaumuruga">GitHub</a>
+  </footer>
+  <script src="js/winbox.bundle.js"></script>
+  <script src="js/main.js"></script> </body>
+</body>
+</html>
