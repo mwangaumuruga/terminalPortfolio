@@ -1,0 +1,63 @@
+/* Add keyframes for the drop-in effect */
+@keyframes dropIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Navigation styling */
+  nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 20px;
+  }
+  
+  nav ul li {
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    opacity: 0;
+    animation: dropIn 1.5s ease forwards;
+  }
+  
+  #about {
+    animation-delay: 0.5s;
+  }
+  
+  #contact {
+    animation-delay: 0.7s;
+  }
+  
+  #resume {
+    animation-delay: 0.9s;
+  }
+  
+  /* Main content and button styling */
+  button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Footer styling */
+  footer {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 14px;
+  }
+  
