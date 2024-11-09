@@ -1,55 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="Projects&Certs.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-d0mJ5xTVVBfhaU5CZfeEPl5UrFkHCW1ra7El6dzaWlJsOZpIgR3mI5U94eELV1eW" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-1.7.2.min.js"></script>
-    <title>@mosesmwangaumurugaProjectsPage</title>
-    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="Projects&Certs.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+<title>@mosesmwangaumuruga Projects Page</title>
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
 </head>
 
 <body>
     <div class="container">
-        <nav>
-            <ul>
-                <li id="about">/About</li>
-                <li id="contact">/Contact</li>
-                <li id="resume"><a class="resume" target="_blank" href="Projects&Certs.html">/Projects&Certs</a></li>
-            </ul>
-        </nav>
+        <header>
+            <h1>Projects, Certifications & Achievements</h1>
+        </header>
 
         <main>
-            <h2>Projects, Certifications, and Achievements</h2>
-
+            <!-- Projects Section -->
             <section id="projects">
-                <h3>Projects:</h3>
+                <h2>Projects <i class="fas fa-project-diagram"></i></h2>
                 <div>
-                    <h4>CalculatorInWebDevelopment</h4>
-                    <button onclick="window.location.href='calculatorInWebDev/calculator.html'">Simple Calculator</button>
+                    <h4>Calculator in Web Development</h4>
+                    <button onclick="window.location.href='calculatorInWebDev/calculator.html'">
+                        <i class="fas fa-calculator"></i> Simple Calculator
+                    </button>
                 </div>
+            </section>
 
-                <h3>Achievements:</h3>
-                <h4>HacktheBox</h4>
-                <a href="https://www.hackthebox.com/achievement/machine/1320325/472">Redeemer</a>
-                <a href="https://www.hackthebox.com/achievement/machine/1320325/403">Sequel</a>
-                <a href="https://www.hackthebox.com/achievement/machine/1320325/461">Responder</a>
-                <a href="https://www.hackthebox.com/achievement/machine/1320325/485">Revolution</a>
+            <!-- Certifications Section -->
+            <section id="certifications">
+                <h2>Certifications <i class="fas fa-certificate"></i></h2>
+                <div>
+                    <h4>Certification Wall</h4>
+                    <a href="AllCerts.pdf" target="_blank">
+                        <i class="fas fa-file-pdf"></i> View Certification
+                    </a>
+                </div>
+            </section>
+
+            <!-- Achievements Section -->
+            <section id="achievements">
+                <h2>Achievements <i class="fas fa-trophy"></i></h2>
+                <h4>Hack the Box</h4>
+                <ul>
+                    <li><a href="https://www.hackthebox.com/achievement/machine/1320325/472"><i class="fas fa-medal"></i> Redeemer</a></li>
+                    <li><a href="https://www.hackthebox.com/achievement/machine/1320325/403"><i class="fas fa-medal"></i> Sequel</a></li>
+                    <li><a href="https://www.hackthebox.com/achievement/machine/1320325/461"><i class="fas fa-medal"></i> Responder</a></li>
+                    <li><a href="https://www.hackthebox.com/achievement/machine/1320325/485"><i class="fas fa-medal"></i> Revolution</a></li>
+                </ul>
             </section>
         </main>
 
-        <p id="copy"><h6>Building trust through reliability and security is a priority in an interconnected world.</h6>
-            <a href="https://www.linkedin.com/in/mwangau/">Copyright(c)codekartel</a> </br>2024<span style="border: 1 uv;"></p>
-            </hr>
-        
-          <img style=border-radius:40vw;width:10vh; src="avatar.png" alt="avatar"> </span>
-        </div>
-        </footer> 
-      </div>
-      </samp>
-       </body>
-      </html>
-      
+        <footer>
+            <p id="copy">
+                <small>Building trust through reliability and security is a priority in an interconnected world.</small>
+                <br />
+                <a href="https://www.linkedin.com/in/mwangau/"><i class="fab fa-linkedin"></i> © 2024 CodeKartel</a>
+            </p>
+            <img style="border-radius: 40vw; width: 10vh;" src="avatar.png" alt="avatar">
+        </footer>
+    </div>
+</body>
+</html>

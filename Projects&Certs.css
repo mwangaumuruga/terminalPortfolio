@@ -1,63 +1,142 @@
-/* Add keyframes for the drop-in effect */
-@keyframes dropIn {
-    0% {
-      opacity: 0;
-      transform: translateY(-50px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  
-  /* Navigation styling */
-  nav ul {
-    display: flex;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    gap: 20px;
-  }
-  
-  nav ul li {
-    font-size: 18px;
-    font-weight: bold;
-    cursor: pointer;
-    opacity: 0;
-    animation: dropIn 1.5s ease forwards;
-  }
-  
-  #about {
-    animation-delay: 0.5s;
-  }
-  
-  #contact {
-    animation-delay: 0.7s;
-  }
-  
-  #resume {
-    animation-delay: 0.9s;
-  }
-  
-  /* Main content and button styling */
-  button {
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 10px;
-  }
-  
-  button:hover {
-    background-color: #0056b3;
-  }
-  
-  /* Footer styling */
-  footer {
-    margin-top: 20px;
-    text-align: center;
-    font-size: 14px;
-  }
-  
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #111;
+  color: #e0e0e0;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header */
+header h1 {
+  color: #32CD32; /* Luminous green */
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #32CD32;
+  padding-bottom: 10px;
+}
+
+/* Sections */
+section {
+  margin-bottom: 30px;
+}
+
+section h2 {
+  color: #32CD32;
+  font-size: 2em;
+  border-bottom: 2px solid #32CD32;
+  padding-bottom: 5px;
+  display: flex;
+  align-items: center;
+}
+
+section h2 i {
+  margin-left: 10px;
+  font-size: 1.2em;
+}
+
+section h4 {
+  color: #8FBC8F;
+  margin-top: 10px;
+}
+
+/* Links */
+a {
+  color: #32CD32;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  padding: 5px;
+  margin-top: 5px;
+  transition: all 0.3s ease;
+}
+
+a i {
+  margin-right: 8px;
+}
+
+/* Link Hover Effect */
+a:hover {
+  color: #00FF00; /* Brighter green */
+  text-decoration: underline; /* Underline on hover */
+  background-color: rgba(50, 205, 50, 0.2); /* Light green background on hover */
+  padding-left: 10px; /* Adds left padding for a "shift" effect */
+}
+
+/* Button */
+button {
+  background-color: #32CD32;
+  color: #111;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1em;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+button i {
+  margin-right: 10px;
+}
+
+button:hover {
+  background-color: #00FF00;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid #32CD32;
+}
+
+footer p {
+  color: #8FBC8F;
+}
+
+footer img {
+  margin-top: 10px;
+}
+
+/* Avatar Image */
+img[alt="avatar"] {
+  border: 2px solid #32CD32;
+  border-radius: 40vw;
+}
+
+/* List styling in Achievements */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  margin: 5px 0;
+}
+
+/* Specific Styling for Buttons and Links in Achievements Section */
+#achievements a {
+  display: inline-block;
+  margin-bottom: 10px;
+  padding: 8px 15px;
+  background-color: #32CD32;
+  border-radius: 5px;
+  font-weight: bold;
+  color: #111;
+  text-align: center;
+}
+
+#achievements a:hover {
+  background-color: #00FF00;
+  color: #111;
+  text-decoration: none;
+}
